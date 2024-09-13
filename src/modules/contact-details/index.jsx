@@ -2,7 +2,6 @@ import { useParams } from 'react-router-dom';
 import styles from './style.module.css';
 import React, { useState, useEffect } from 'react';
 import { ContactCard } from './../../components/card/index';
-import { Link } from 'react-router-dom';
 
 const ContactDetails = () => {
   const { uuid } = useParams();
@@ -37,7 +36,6 @@ const ContactDetails = () => {
 
   return (
     <div>
-      <Link className={styles.backButton} to={`/`}> Back To Contacts</Link>
       <div className={styles.gridContainer}>
        <div className={styles.contactCardWrapper}>
         <ContactCard className={styles.card} key={contact.login.uuid} contact={contact} />

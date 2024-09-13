@@ -1,21 +1,37 @@
 import React from 'react';
 import styles from './style.module.css';
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+import { useDispatch } from 'react-redux';
+import { searchUser } from './../../core/store/actions';
 
 export const Layout = () => {
+  const dispatch = useDispatch();
+
+  const handleSearch = (e) => {
+    dispatch(searchUser(e.target.value));
+  };
+
   return (
     <div className={styles.layout}>
-     <div className={styles.sidebar}>
-      <div className={styles.search}>
-        <input type="text" placeholder="Search" className={styles.searchInput} />
-        <button aria-label="search" className={styles.newButton}>New</button>
-      </div>
-     </div>
+       <nav className={styles.navbar}>
+        <div className={styles.navLinks}>
+          <Link to="/" className={styles.navLink}>Home</Link>
+          <Link to="/create-user" className={styles.navLink}>Create User</Link>
+        </div>
+         <div className={styles.search}>
+          <input
+            type="text"
+            placeholder="Search"
+            onChange={handleSearch}
+            className={styles.searchInput}
+          />
+        </div>
+      </nav>
+      
+      {/* Main Content */}
       <div className={styles.mainContent}>
-         <Outlet />
+        <Outlet />
       </div>
     </div>
   );
 };
-
- 

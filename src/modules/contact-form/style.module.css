@@ -1,0 +1,55 @@
+.form_user {
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.form_user div {
+    margin-bottom: 15px;
+}
+  
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+  
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+  
+.form_user input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #5fb650;
+    outline: none;
+}
+  
+.form_user p {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+  }
+  
+.form_user button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #5fb650;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+button:hover {
+    background-color: #5fb650;
+}
+  

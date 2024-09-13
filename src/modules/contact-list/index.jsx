@@ -9,7 +9,7 @@ const ContactList = () => {
   const [filteredContacts, setFilteredContacts] = useState([]);
   const [selectedLetter, setSelectedLetter] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
+  const [totalPages] = useState(5);
   const [resultsPerPage] = useState(15);
 
   const fetchContacts = useCallback((page) => {
@@ -19,8 +19,7 @@ const ContactList = () => {
         localStorage.setItem('users', JSON.stringify(fetchedContacts));
         setContacts(fetchedContacts);
         setFilteredContacts(fetchedContacts);
-        setTotalPages(Math.ceil(response.data.info.results / resultsPerPage)); 
-      })
+       })
       .catch((error) => console.error('Error fetching contacts:', error));
   }, [resultsPerPage]);
 

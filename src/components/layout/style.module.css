@@ -1,45 +1,44 @@
 .layout {
     display: flex;
-    min-height: 100vh;
-    position: relative; 
+    flex-direction: column;
+    height: 100vh;
 }
   
-.sidebar {
-    position: sticky;
-    top:0;
-    width: 250px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-right: 1px solid #ccc;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #282c34;
+    color: white;
+}
+  
+.navLinks {
+    display: flex;
+    gap: 1rem;
+}
+  
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+  
+.navLink:hover {
+    text-decoration: underline;
 }
   
 .search {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
 }
   
 .searchInput {
-    width: 70%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 0px;
-    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
 }
-  
-.newButton {
-    background-color: #5fb650;
-    border: 0.5px solid #5fb650;
-    color: white;
-    padding: 8px 16px;
-    border-radius: 0px;
-    cursor: pointer;
-}
-  
   
 .mainContent {
     flex: 1;
-    background-color: white;
- }
+}
   

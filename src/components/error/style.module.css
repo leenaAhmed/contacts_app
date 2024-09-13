@@ -1,0 +1,36 @@
+.errorPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .errorPage h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: bounce 1.5s infinite;
+  }
+  
+  .errorPage p {
+    font-size: 1.2rem;
+  }
+  
+  .errorPage i {
+    color: #ffd700;
+    font-style: normal;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
