@@ -1,0 +1,45 @@
+.layout {
+    display: flex;
+    min-height: 100vh;
+    position: relative; 
+}
+  
+.sidebar {
+    position: sticky;
+    top:0;
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+  
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.searchInput {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    outline: none;
+}
+  
+.newButton {
+    background-color: #5fb650;
+    border: 0.5px solid #5fb650;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+  
+  
+.mainContent {
+    flex: 1;
+    background-color: white;
+ }
+  

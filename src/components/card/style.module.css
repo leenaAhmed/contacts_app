@@ -1,0 +1,63 @@
+.contactCard {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem ;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+}
+.contactCard:hover {
+  box-shadow: none;
+  scale: 0.9;
+}
+.profileImage {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+  
+.profileImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.greeting {
+    font-size: 1em;
+    color: gray;
+    margin-bottom: 10px;
+}
+  
+.name {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+  
+.iconBar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+  
+.icon {
+    font-size: 1.5em;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+  
+.active {
+    color: #5fb650;
+}
+  
+.icon:hover {
+    color: #5fb650;
+}
