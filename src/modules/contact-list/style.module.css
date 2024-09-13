@@ -1,0 +1,7 @@
+.contact_card {
+  transition :all 1s ease-in-out;
+}
+.contact_card:hover {
+    box-shadow: none;
+    scale: 0.9;
+}

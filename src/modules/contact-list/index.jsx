@@ -3,7 +3,8 @@ import { FilterLetters } from './../../components/Filter/index';
 import { ContactCard } from './../../components/card/index';
 import { Pagination} from './../../components/Pagination/index';
 import { getContacts} from './../../core/services/contact.service'
- 
+import styles from './style.module.css';
+
 const ContactList = () => {
   const [contacts, setContacts] = useState([]);
   const [filteredContacts, setFilteredContacts] = useState([]);
@@ -59,7 +60,7 @@ const ContactList = () => {
 
       <div className="gridContainer mb-2">
         {filteredContacts.map((contact) => (
-          contact && <ContactCard key={contact.login.uuid} contact={contact} />
+          contact && <ContactCard className={styles.contact_card} key={contact.login.uuid} contact={contact} />
         ))}
       </div>
 

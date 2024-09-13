@@ -9,10 +9,6 @@
     transition: all 0.2s ease-in-out;
     display: inline-block;
 }
-.contactCard:hover {
-  box-shadow: none;
-  scale: 0.9;
-}
 .profileImage {
     border-radius: 50%;
     overflow: hidden;
