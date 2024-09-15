@@ -10,6 +10,8 @@ import ErrorPage from './components/error/index';
 import UserForm from './modules/contact-form/index';
 import { Provider } from 'react-redux';
 import store from './core/store/store';
+import { HashRouter } from "react-router-dom";
+
 const router = createBrowserRouter([
   {
     element: <Layout />,
@@ -36,9 +38,11 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Provider store={store}>
-      <RouterProvider router={router} />
-  </Provider>
+  <HashRouter>
+    <Provider store={store}>
+        <RouterProvider router={router} />
+    </Provider>
+  </HashRouter>
  );
 
 
