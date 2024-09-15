@@ -9,7 +9,7 @@ import { FilterLetters } from './../../components/Filter/index';
 
 const ContactList = () => {
   const contacts = useSelector((state) => state.users);
-  const searchQuery = useSelector((state) => state.searchQuery); // Get search query
+  const searchQuery = useSelector((state) => state.searchQuery);  
   const [filteredContacts, setFilteredContacts] = useState([]);
   const [selectedLetter, setSelectedLetter] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
